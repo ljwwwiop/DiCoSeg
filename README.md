@@ -24,12 +24,12 @@
 |          | CPCM             | 66.3  | ICCV    |
 |          | PointCT          | 68.3  | WACV    |
 |          | AADNet           | 67.2  | AAAI    |
-|          | **DiCoSeg (Ours)**   | **68.3** |         |
+|          | **DiCoSeg (Ours)**   | **68.3** |   [logs](https://drive.google.com/file/d/1jeGmtlH8DyY8qnrG65oR6AfHNqd3ZBuz/view?usp=drive_link) / -     |
 
 | Settings | Method               | mIoU  | Where   |
 |----------|----------------------|-------|---------|
 | 1%       | RandLA-Net       | 59.8  | CVPR    |
 |          | SQN              | 63.6  | ECCV    |
 |          | PointCT          | 67.6  | WACV    |
-|          | **DiCoSeg (Ours)**   | **68.3** |         |
+|          | **DiCoSeg (Ours)**   | **68.3** |  [logs](https://drive.google.com/file/d/1PcQORLkw50AUNoT1XKdBtABkkYXGrI29/view?usp=drive_link) / -      |
 

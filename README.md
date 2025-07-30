@@ -17,7 +17,7 @@
 |          | SQN              | 45.3  | ECCV    |
 |          | CPCM             | 59.3  | ICCV    |
 |          | AADNet           | 60.8  | AAAI    |
-|          | **DiCoSeg (Ours)**   | **61.1** |    [logs](https://drive.google.com/file/d/1JjYUofwmHeGM-Ikvm1rw37pXLAVOG2r1/view?usp=drive_link)     |
+|          | **DiCoSeg (Ours)**   | **61.1** |    [logs](https://drive.google.com/file/d/1JjYUofwmHeGM-Ikvm1rw37pXLAVOG2r1/view?usp=drive_link) / [ckpt](https://drive.google.com/file/d/1cjSIqpzWTNBwuuyasCxnmUHHiyJY9hmp/view?usp=drive_link) |
 
 | Settings | Method               | mIoU  | Where   |
 |----------|----------------------|-------|---------|

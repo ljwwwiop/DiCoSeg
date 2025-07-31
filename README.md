@@ -6,7 +6,7 @@
 ⚡️ Single-step inference, strong generalization, and robust results across benchmarks.
 
 📈 Currently under submission — stay tuned for updates!  
-📬 *If you're reviewing this... be kind 😄*
+📬 *If you're reviewing this... be kind* 😄
 
 📎 [Code coming soon]
 

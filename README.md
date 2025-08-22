@@ -1,16 +1,7 @@
 # 🚧 Diffusion-Based Contextual Reconstruction for Point Cloud Segmentation with Limited Annotations
 
-🎯 **DiCoSeg** 
+🎯 **DiCoSeg Author** : Jiawei Lian, Zhengxue Wang, Wentao Qu, Haobo Jiang, Le Hui, Jian Yang
 
-<p align="center">
-  Author:
-  <font color="blue"><u>Jiawei Lian</u></font>, 
-  <font color="blue"><u>Zhengxue Wang</u></font>, 
-  <font color="blue"><u>Wentao Qu</u></font>, 
-  <font color="blue"><u>Haobo Jiang</u></font>, 
-  <font color="blue"><u>Le Hui</u></font>, 
-  <font color="blue"><u>Jian Yang</u></font>
-</p>
 
 
 🔬 Tackling 3D segmentation under annotation scarcity? DiCoSeg leverages diffusion models for **context-aware reconstruction** with just a few labels.  

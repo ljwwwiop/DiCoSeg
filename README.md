@@ -1,4 +1,4 @@
-# 🚧 Diffusion-Based Contextual Reconstruction for Point Cloud Segmentation with Limited Annotations
+# 🚧 [Diffusion-Based Contextual Reconstruction for Point Cloud Segmentation with Limited Annotations](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=svW3qjkAAAAJ&citation_for_view=svW3qjkAAAAJ:zYLM7Y9cAGgC)
 
 🎯 **DiCoSeg Author** : Jiawei Lian, Zhengxue Wang, Wentao Qu, Haobo Jiang, Le Hui, Jian Yang
 

@@ -27,7 +27,7 @@ enable_wandb = False
 
 wandb_project = "weake2e-skip"  # cvpr
 
-wandb_key = "6656299939507e0cab0226864f49c52accf378e2"  # wandb token, default is None. If None, login with `wandb login` in your terminal
+wandb_key = None
 
 mix_prob = 0
 param_dicts = None  # example: param_dicts = [dict(keyword="block", lr_scale=0.1)]

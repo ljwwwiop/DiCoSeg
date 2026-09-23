@@ -239,7 +239,6 @@ class Trainer(TrainerBase):
         n_parameters = sum(p.numel() for p in model.parameters() if p.requires_grad)
         # logger.info(f"Model: \n{self.model}")
         self.logger.info(f"Num params: {n_parameters}")
-        self.logger.info(f"Num params: {n_parameters/(1e6)} MB")
         model = create_ddp_model(
             model.cuda(),
             broadcast_buffers=False,
@@ -249,7 +248,7 @@ class Trainer(TrainerBase):
 
     def build_writer(self):
         writer = SummaryWriter(self.cfg.save_path) if comm.is_main_process() else None
-        os.environ['WANDB_API_KEY'] = "6656299939507e0cab0226864f49c52accf378e2"
+
 
         self.logger.info(f"Tensorboard writer logging dir: {self.cfg.save_path}")
         if self.cfg.enable_wandb and comm.is_main_process():

@@ -34,7 +34,6 @@ try:
 except:
     pointops = None
 
-import pdb
 
 TESTERS = Registry("testers")
 
@@ -67,7 +66,7 @@ class TesterBase:
     def build_model(self):
         model = build_model(self.cfg.model)
         n_parameters = sum(p.numel() for p in model.parameters() if p.requires_grad)
-        self.logger.info(f"Num params: {n_parameters}, {n_parameters/(1e6)} MB.")
+        self.logger.info(f"Num params: {n_parameters}")
         model = create_ddp_model(
             model.cuda(),
             broadcast_buffers=False,
@@ -174,8 +173,6 @@ class SemSegTester(TesterBase):
             fragment_list = data_dict.pop("fragment_list")
             segment = data_dict.pop("segment")
             data_name = data_dict.pop("name")
-            # if data_name != 'Area_5-office_10':
-            #     continue
             pred_save_path = os.path.join(save_path, "{}_pred.npy".format(data_name))
             if os.path.isfile(pred_save_path):
                 logger.info(
@@ -198,11 +195,9 @@ class SemSegTester(TesterBase):
                         if isinstance(input_dict[key], torch.Tensor):
                             input_dict[key] = input_dict[key].cuda(non_blocking=True)
                     idx_part = input_dict["index"]
-                    # pdb.set_trace()
                     with torch.no_grad():
                         # print("input_dict==>>",input_dict.keys())
                         pred_part = self.model(input_dict)["seg_logits"]  # (n, k)
-                        # pdb.set_trace()
                         pred_part = F.softmax(pred_part, -1)
                         if self.cfg.empty_cache:
                             torch.cuda.empty_cache()

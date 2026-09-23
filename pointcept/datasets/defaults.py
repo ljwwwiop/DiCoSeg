@@ -21,7 +21,6 @@ from pointcept.utils.cache import shared_dict
 from .builder import DATASETS, build_dataset
 from .transform import Compose, TRANSFORMS
 
-# color, coord, instance, normal, segment
 
 @DATASETS.register_module()
 class DefaultDataset(Dataset):
@@ -137,7 +136,7 @@ class DefaultDataset(Dataset):
                 segment = data_dict["segment"]
                 # print(segment.shape)
                 M = int(segment.shape[0] * r) + 1
-                M = max(M, 2)
+                M = max(M, 5)
                 # print("M==>>",M, int( r * segment.shape[0]) )
                 valid_indices = np.where(segment != self.ignore_index)[0] 
                 random_indices = np.random.choice(valid_indices, M, replace=False)

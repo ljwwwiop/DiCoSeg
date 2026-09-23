@@ -126,8 +126,6 @@ class SemSegEvaluator(HookBase):
                 if isinstance(input_dict[key], torch.Tensor):
                     input_dict[key] = input_dict[key].cuda(non_blocking=True)
             with torch.no_grad():
-                output_dict = self.trainer.model(input_dict)
-
                 if 'noise' not in self.trainer.cfg.model.backbone.type:
                     output_dict = self.trainer.model(input_dict)
                 else:

@@ -114,17 +114,21 @@ else
 fi
 
 
-# Scratched training
+# Scratched nuScenes
+# sh scripts/train.sh -g 4 -d nuscenes -c semseg-pt-v3m1-0-base -n semseg-pt-v3m1-0-base-sparse0.001
+# Scratched Waymo
+# sh scripts/train.sh -g 4 -d waymo -c semseg-pt-v3m1-0-base -n semseg-pt-v3m1-0-base
+# SemanticKITTI
+# sh scripts/train.sh -g 2 -d semantic_kitti -c semseg-pt-v3m2-0-base -n semseg-pt-v3m2-0-base
 
-## S3DIS default weak_label = 0.1%
-# sh scripts/train.sh -g 4 -d s3dis -c semseg-spunet-v1m1-0-base -n s3-spunet-v1m1-0-base
+# sh scripts/train.sh -g 4 -d nuscenes -c semseg-pt-v3m1-0-noattn -n semseg-pt-v3m1-0-noattn
 
-## Scannet default weak_label = 0.1%
-# sh scripts/train.sh -g 4 -d scannet -c semseg-spunet-v1m1-0-base -n sc-spunet-v1m1-0-base
+## weakly
+# sh scripts/train.sh -g 4 -d semantic_kitti -c semseg-ppt-v1m1-0-sk-weakly-spunet -n semseg-ppt-base-scale-weakly-fine-best
+
+# sh scripts/train.sh -g 4 -d nuscenes -c semseg-ppt-v1m1-0-nu-weakly-spunet -n semseg-ppt-base-scale-weakly-fine
 
 
-## SK default Full
-# sh scripts/train.sh -g 4 -d semantic_kitti -c semseg-spunet-v1m1-0-base -n sk-spunet-v1m1-0-base
+# sh scripts/train.sh -g 4 -d nuscenes -c semseg-ppt-v1m1-0-nu-weakly-spunet -n semseg-weak-ptv3-100
 
-## nuScenes default Full
-# sh scripts/train.sh -g 4 -d nuscenes -c semseg-spunet-v1m1-0-base -n nus-spunet-v1m1-0-base
+# sh scripts/train.sh -g 4 -d semantic_kitti -c semseg-ppt-v1m1-0-sk-weakly-spunet -n semseg-weak-ptv3-fsp-100
